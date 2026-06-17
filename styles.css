@@ -167,8 +167,10 @@ h3 {
 .hero-card,
 .project-card,
 .capability,
+.resume-card,
 .principles article,
-.contact-card {
+.contact-card,
+.diagram-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.58));
@@ -236,6 +238,57 @@ h3 {
 .section-heading p:not(.eyebrow) {
   color: var(--muted);
   font-size: 1.04rem;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+.resume-card {
+  padding: 24px;
+}
+
+.resume-card.highlight {
+  background:
+    linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(34, 211, 238, 0.08)),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.62));
+}
+
+.resume-card p {
+  color: var(--muted);
+}
+
+.diagram-card {
+  padding: 18px;
+  overflow: hidden;
+}
+
+.diagram-card svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 360px;
+}
+
+.diagram-card text {
+  fill: var(--text);
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.diagram-card text.small {
+  fill: #cbd5e1;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.diagram-card text.tiny {
+  fill: #94a3b8;
+  font-size: 11px;
+  font-weight: 650;
 }
 
 .capability-grid,
@@ -391,6 +444,10 @@ dd {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .resume-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .demo-strip {
     grid-template-columns: 1fr;
   }
@@ -421,8 +478,19 @@ dd {
 
   .capability-grid,
   .principles,
-  .project-grid {
+  .project-grid,
+  .resume-grid {
     grid-template-columns: 1fr;
+  }
+
+  .diagram-card {
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .diagram-card svg {
+    min-width: 760px;
+    min-height: 320px;
   }
 
   .project-card.featured {

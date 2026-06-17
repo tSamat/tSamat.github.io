@@ -16,6 +16,8 @@
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="Home">tSamat</a>
       <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#architecture">Architecture</a>
         <a href="#work">Work</a>
         <a href="#case-studies">Case studies</a>
         <a href="#principles">Principles</a>
@@ -33,6 +35,7 @@
         </p>
         <div class="cta-row">
           <a class="button primary" href="#case-studies">View case studies</a>
+          <a class="button secondary" href="#about">Resume snapshot</a>
           <a class="button secondary" href="https://github.com/tSamat">GitHub profile</a>
         </div>
       </div>
@@ -49,6 +52,122 @@
   </header>
 
   <main>
+    <section id="about" class="section about-section">
+      <div class="section-heading">
+        <p class="eyebrow">About / Resume snapshot</p>
+        <h2>Enterprise AI builder with platform, automation, and quality-loop focus.</h2>
+        <p>
+          I build practical AI systems for document-heavy organizations: RAG/GraphRAG gateways,
+          evaluation loops, workflow automation, reporting pipelines, and operator-facing platform dashboards.
+        </p>
+      </div>
+      <div class="resume-grid">
+        <article class="resume-card highlight">
+          <h3>Positioning</h3>
+          <p>
+            Applied AI / platform engineer who can turn ambiguous business workflows into tested APIs,
+            operational runbooks, evaluation harnesses, and public-safe demos.
+          </p>
+        </article>
+        <article class="resume-card">
+          <h3>Core stack</h3>
+          <p>Python, FastAPI, Neo4j, RAG/GraphRAG, Kubernetes, PostgreSQL, automation pipelines, static portals, CI.</p>
+        </article>
+        <article class="resume-card">
+          <h3>Strengths</h3>
+          <p>Architecture, source-grounded AI, privacy-aware design, test automation, incident-ready operations, executive reporting.</p>
+        </article>
+        <article class="resume-card">
+          <h3>Public proof</h3>
+          <p>GitHub Pages portfolio plus small sanitized repositories with synthetic data, tests, CI, and no private artifacts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="architecture" class="section alt architecture-section">
+      <div class="section-heading">
+        <p class="eyebrow">Architecture map</p>
+        <h2>How the public portfolio maps to production-grade AI patterns</h2>
+        <p>
+          The public repositories are intentionally small, but each one demonstrates a boundary used in larger enterprise AI systems:
+          controlled ask endpoints, quality evaluation, privacy guards, and operations visibility.
+        </p>
+      </div>
+      <div class="diagram-card" role="img" aria-label="Architecture diagram showing portfolio, demo repositories, and enterprise AI patterns">
+        <svg viewBox="0 0 1120 560" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+            </pattern>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa"/>
+            </marker>
+            <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="#34d399"/>
+            </marker>
+          </defs>
+          <rect width="1120" height="560" rx="22" fill="#020617"/>
+          <rect width="1120" height="560" rx="22" fill="url(#grid)" opacity="0.72"/>
+
+          <line x1="285" y1="160" x2="420" y2="160" stroke="#60a5fa" stroke-width="2.2" marker-end="url(#arrow)"/>
+          <line x1="285" y1="300" x2="420" y2="300" stroke="#60a5fa" stroke-width="2.2" marker-end="url(#arrow)"/>
+          <line x1="700" y1="160" x2="835" y2="115" stroke="#34d399" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+          <line x1="700" y1="300" x2="835" y2="345" stroke="#34d399" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+          <line x1="560" y1="345" x2="560" y2="420" stroke="#fb7185" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+
+          <g class="svg-node external">
+            <rect x="65" y="95" width="220" height="270" rx="14" fill="#0f172a"/>
+            <rect x="65" y="95" width="220" height="270" rx="14" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="88" y="132">Public portfolio</text>
+            <text x="88" y="158" class="small">GitHub Pages</text>
+            <text x="88" y="205" class="tiny">• case studies</text>
+            <text x="88" y="232" class="tiny">• sanitized demos</text>
+            <text x="88" y="259" class="tiny">• employer-facing proof</text>
+            <text x="88" y="286" class="tiny">• no private data</text>
+          </g>
+
+          <g class="svg-node backend">
+            <rect x="420" y="95" width="280" height="130" rx="14" fill="#0f172a"/>
+            <rect x="420" y="95" width="280" height="130" rx="14" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+            <text x="445" y="130">AI RAG Gateway Demo</text>
+            <text x="445" y="156" class="small">ask endpoint + policy layer</text>
+            <text x="445" y="190" class="tiny">routing · retrieval · citations · redaction</text>
+          </g>
+
+          <g class="svg-node database">
+            <rect x="420" y="255" width="280" height="130" rx="14" fill="#0f172a"/>
+            <rect x="420" y="255" width="280" height="130" rx="14" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+            <text x="445" y="290">Document AI Evaluation</text>
+            <text x="445" y="316" class="small">quality harness</text>
+            <text x="445" y="350" class="tiny">cases · metrics · reports · CI gates</text>
+          </g>
+
+          <g class="svg-node cloud">
+            <rect x="835" y="55" width="220" height="120" rx="14" fill="#0f172a"/>
+            <rect x="835" y="55" width="220" height="120" rx="14" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+            <text x="858" y="92">Enterprise pattern</text>
+            <text x="858" y="118" class="small">controlled AI gateway</text>
+            <text x="858" y="148" class="tiny">source-grounded answers</text>
+          </g>
+
+          <g class="svg-node cloud">
+            <rect x="835" y="285" width="220" height="120" rx="14" fill="#0f172a"/>
+            <rect x="835" y="285" width="220" height="120" rx="14" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+            <text x="858" y="322">Quality loop</text>
+            <text x="858" y="348" class="small">regression + governance</text>
+            <text x="858" y="378" class="tiny">measure before scaling</text>
+          </g>
+
+          <g class="svg-node security">
+            <rect x="420" y="420" width="280" height="80" rx="14" fill="#0f172a"/>
+            <rect x="420" y="420" width="280" height="80" rx="14" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+            <text x="445" y="455">Privacy boundary</text>
+            <text x="445" y="480" class="small">synthetic fixtures · no credentials · no internal paths</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
     <section id="work" class="section">
       <div class="section-heading">
         <p class="eyebrow">Selected work</p>
