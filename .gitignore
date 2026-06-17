@@ -1,0 +1,49 @@
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials.*
+token.*
+
+# Heavy/private runtime artifacts
+runtime/
+data/
+outputs/private/
+*.sqlite
+*.sqlite3
+*.db
+*.parquet
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.pdf
+*.xlsx
+*.xls
+*.docx
+*.pptx
+
+# Dependencies/build caches
+node_modules/
+.venv/
+venv/
+__pycache__/
+.cache/
+dist/
+build/
