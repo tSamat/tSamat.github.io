@@ -82,6 +82,32 @@ a {
   color: var(--text);
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.58);
+  color: var(--muted);
+}
+
+.lang-switch a,
+.lang-switch strong {
+  min-width: 34px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 0.78rem;
+  line-height: 1;
+}
+
+.lang-switch strong {
+  color: #06111f;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);

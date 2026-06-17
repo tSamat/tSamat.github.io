@@ -3,6 +3,7 @@
 Public GitHub Pages portfolio for selected enterprise AI, GraphRAG, automation, and platform engineering work.
 
 Site: https://tsamat.github.io/
+Russian version: https://tsamat.github.io/ru.html
 
 ## Scope
 
